@@ -69,7 +69,7 @@ print("Model loaded successfully!")
 class Query(BaseModel):
     prompt: str
     max_length: int = 1000
-    temperature: float = 0.7
+    temperature: float = 0.9
 
 @app.post("/generate")
 async def generate_text(query: Query):
