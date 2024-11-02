@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Utility classes used in ChatInterface */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-1 { flex: 1 1 0%; }
+.h-screen { height: 100vh; }
+.max-w-4xl { max-width: 56rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.p-4 { padding: 1rem; }
+.p-2 { padding: 0.5rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.ml-8 { margin-left: 2rem; }
+.mr-8 { margin-right: 2rem; }
+.gap-2 { gap: 0.5rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.bg-blue-100 { background-color: #dbeafe; }
+.bg-gray-100 { background-color: #f3f4f6; }
+.bg-blue-500 { background-color: #3b82f6; }
+.hover\:bg-blue-600:hover { background-color: #2563eb; }
+.text-white { color: white; }
+.overflow-y-auto { overflow-y: auto; }
+.disabled\:bg-blue-300:disabled { background-color: #93c5fd; }
+
+.border { border: 1px solid #e5e7eb; }
+.focus\:outline-none:focus { outline: none; }
+.focus\:ring-2:focus { box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); }
+.focus\:ring-blue-500:focus { --ring-color: #3b82f6; }
+
+.w-6 { width: 1.5rem; }
+.h-6 { height: 1.5rem; }
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
